@@ -10,24 +10,24 @@
     "train": {
       "name": "train_dataset", // just name
       "dataroot": [
-        "/home/meiazero/Mestrado/Disciplinas/teoria-da-informacao/TL2/SIDD_Small_sRGB/clean/",
-        "/home/meiazero/Mestrado/Disciplinas/teoria-da-informacao/TL2/SIDD_Small_sRGB/noisy/"
+        "/content/clean/",
+        "/content/noisy/"
       ],
       "n_max": null,
-      "H_size": 64, // patch size 40 | 64 | 96 | 128 | 192
+      "H_size": 40, // patch size 40 | 64 | 96 | 128 | 192
       "dataloader_shuffle": false,
       "dataloader_num_workers": 8,
-      "dataloader_batch_size": 16,
+      "dataloader_batch_size": 8,
       "H_noise_level": 40,
       "L_noise_level": 20
     },
     "test": {
       "name": "test_dataset", // just name
       "dataroot": [
-        "/home/meiazero/Mestrado/Disciplinas/teoria-da-informacao/TL2/SIDD_Small_sRGB/val_clean/",
-        "/home/meiazero/Mestrado/Disciplinas/teoria-da-informacao/TL2/SIDD_Small_sRGB/val_noisy/"
+        "/content/val_clean/",
+        "/content/val_noisy/"
       ],
-      "H_size": 256,
+      "H_size": 32,
       "n_max": 20,
       "H_noise_level": 40,
       "L_noise_level": 20
