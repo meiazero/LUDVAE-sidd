@@ -126,7 +126,7 @@ def main(json_path: str ='./train_sidd.jsonc'):
     # ----------------------------------------
     '''
 
-    for epoch in range(2):  # keep running
+    for epoch in range(10):  # keep running
         for i, train_data in enumerate(train_loader):
 
             current_step += 1
